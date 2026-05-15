@@ -32,6 +32,7 @@ from pyhive.tests.dbapi_test_case import with_cursor
 _HOST = 'localhost'
 
 
+@pytest.mark.xdist_group('hive')
 class TestHive(unittest.TestCase, DBAPITestCase):
     __test__ = True
 
